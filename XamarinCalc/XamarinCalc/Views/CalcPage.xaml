@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinCalc.Views.CalcPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Styles for buttons -->
+            <!-- Numeric buttons -->
+            <Style x:Key="NumericButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="36" />
+                <Setter Property="BorderRadius" Value="0" />
+            </Style>
+            <!-- Operation buttons -->
+            <Style x:Key="OperationButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Orange" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="36" />
+                <Setter Property="BorderRadius" Value="0" />
+            </Style>
+            <!-- Clear button -->
+            <Style x:Key="ClearButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Gray" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="36" />
+                <Setter Property="BorderRadius" Value="0" />
+            </Style>
+        </ResourceDictionary>    
+    </ContentPage.Resources>
+        
+    <ContentPage.Content>
+        <Grid Padding="5" BackgroundColor="Black" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="1.5*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <ScrollView Grid.ColumnSpan="3" Grid.Row="0" >
+            <Label Text="{Binding History}" FontSize="22" FontAttributes="Italic" BackgroundColor="Black" TextColor="LightGray" TextDecorations="Underline" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" />
+            </ScrollView>
+            <Label Text="{Binding Summ}" Grid.Column="3" Grid.Row="0" FontSize="28" FontAttributes="Bold" BackgroundColor="Black" TextColor="Orange" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+            <ScrollView Grid.ColumnSpan="4" Grid.Row="1" >
+            <Label Text="{Binding Result}" FontSize="48" FontAttributes="Bold" BackgroundColor="Black" TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+            </ScrollView>
+            <Button x:Name="button7" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button7}" Text="7" Grid.Row="2" Grid.Column="0" Style="{StaticResource NumericButtonStyle}" />
+            <Button x:Name="button8" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button8}" Text="8" Grid.Row="2" Grid.Column="1" Style="{StaticResource NumericButtonStyle}" />
+            <Button x:Name="button9" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button9}" Text="9" Grid.Row="2" Grid.Column="2" Style="{StaticResource NumericButtonStyle}" />
+
+            <Button x:Name="button4" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button4}" Text="4" Grid.Row="3" Grid.Column="0" Style="{StaticResource NumericButtonStyle}" />
+            <Button x:Name="button5" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button5}" Text="5" Grid.Row="3" Grid.Column="1" Style="{StaticResource NumericButtonStyle}" />
+            <Button x:Name="button6" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button6}" Text="6" Grid.Row="3" Grid.Column="2" Style="{StaticResource NumericButtonStyle}" />
+
+            <Button x:Name="button1" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button1}" Text="1" Grid.Row="4" Grid.Column="0" Style="{StaticResource NumericButtonStyle}" />
+            <Button x:Name="button2" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button2}" Text="2" Grid.Row="4" Grid.Column="1" Style="{StaticResource NumericButtonStyle}" />
+            <Button x:Name="button3" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button3}" Text="3" Grid.Row="4" Grid.Column="2" Style="{StaticResource NumericButtonStyle}" />
+
+            <Button x:Name="button0" Command="{Binding SetNumberCommand}" CommandParameter="{x:Reference button0}" Text="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource NumericButtonStyle}" />
+            <Button Command="{Binding DotCommand}" Text="." Grid.Row="5" Grid.Column="2" Style="{StaticResource NumericButtonStyle}" />
+
+            <Button Command="{Binding AddCommand}" Text="+" Grid.Row="2" Grid.Column="3" Style="{StaticResource OperationButtonStyle}" />
+            <Button Command="{Binding SubCommand}" Text="-" Grid.Row="3" Grid.Column="3" Style="{StaticResource OperationButtonStyle}" />
+            <Button Command="{Binding MultCommand}" Text="*" Grid.Row="4" Grid.Column="3" Style="{StaticResource OperationButtonStyle}" />
+            <Button Command="{Binding DevCommand}" Text="/" Grid.Row="5" Grid.Column="3" Style="{StaticResource OperationButtonStyle}" />
+
+            <Button Command="{Binding ClearCommand}" Text="C" Grid.Row="6" Grid.Column="0" Style="{StaticResource ClearButtonStyle}" />
+            <Button Command="{Binding CalculateCommand}" Text="=" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" Style="{StaticResource OperationButtonStyle}" />
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

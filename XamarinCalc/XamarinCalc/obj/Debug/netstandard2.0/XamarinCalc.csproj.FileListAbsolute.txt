@@ -1,0 +1,13 @@
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\bin\Debug\netstandard2.0\XamarinCalc.deps.json
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\bin\Debug\netstandard2.0\XamarinCalc.dll
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\bin\Debug\netstandard2.0\ref\XamarinCalc.dll
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\bin\Debug\netstandard2.0\XamarinCalc.pdb
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\XamarinCalc.AssemblyInfoInputs.cache
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\XamarinCalc.AssemblyInfo.cs
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\XamarinCalc.dll
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\ref\XamarinCalc.dll
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\XamarinCalc.pdb
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\Views\CalcPage.xaml.g.cs
+C:\Users\Professional\source\repos\XamarinCalc\XamarinCalc\XamarinCalc\obj\Debug\netstandard2.0\XamarinCalc.csprojAssemblyReference.cache
