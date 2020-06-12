@@ -1,0 +1,2 @@
+# XamarinCalculator
+tec: MVVM pattern.
